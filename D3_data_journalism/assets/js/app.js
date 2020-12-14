@@ -29,6 +29,7 @@ d3.csv("assets/data/data.csv").then(function (healthData) {
     healthData.forEach(function (data) {
         data.poverty = +data.poverty;
         data.healthcare = +data.healthcare;
+
     });
 
     // Create scale functions
@@ -63,7 +64,7 @@ d3.csv("assets/data/data.csv").then(function (healthData) {
         .attr("r", "15")
 
     //Add the SVG Text Element to the chartGroup
-    chartGroup.selectAll("text")
+    chartGroup.selectAll()
         .data(healthData)
         .enter()
         .append("text")
@@ -71,7 +72,7 @@ d3.csv("assets/data/data.csv").then(function (healthData) {
         .attr("x", d => xLinearScale(d.poverty))
         .attr("y", d => yLinearScale(d.healthcare) + 5)
         .text(d => d.abbr)
-        .attr("font-size", "15px")
+        .attr("font-size", "15px");
 
     // Initialize tool tip
     const toolTip = d3.tip()

@@ -4,6 +4,7 @@
 }
 
 /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+
 html {
   position: relative;
   min-height: 100%;
@@ -14,10 +15,15 @@ body {
   padding-bottom: 80px;
 }
 
+h1 {
+  text-align: center;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
-  width: 100%; /* Set the fixed height of the footer here */
+  width: 100%;
+  /* Set the fixed height of the footer here */
   height: 10px;
   padding-top: 20px;
   padding-bottom: 40px;
