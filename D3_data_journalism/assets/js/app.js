@@ -30,6 +30,7 @@ function makeResponsive() {
     // and shift the latter by left and top margins.
     const svg = d3.select("#scatter")
         .append("svg")
+        .classed("chart", true)
         .attr("width", svgWidth)
         .attr("height", svgHeight);
 
@@ -43,7 +44,6 @@ function makeResponsive() {
         healthData.forEach(function (data) {
             data.poverty = +data.poverty;
             data.healthcare = +data.healthcare;
-            stateAbbr = data.abbr;
         });
 
         // Create scale functions
@@ -68,15 +68,14 @@ function makeResponsive() {
             .call(leftAxis);
 
         // Create Circles
-        const circlesGroup = chartGroup.selectAll(".stateCircle")
+        const circlesGroup = chartGroup.selectAll("circle")
             .data(healthData)
             .enter()
             .append("circle")
+            .classed("stateCircle", true)
             .attr("cx", d => xLinearScale(d.poverty))
             .attr("cy", d => yLinearScale(d.healthcare))
             .attr("r", "15")
-            .attr("fill", "lightblue")
-            .attr("opacity", ".7");
 
         // Initialize tool tip
         let toolTip = d3.tip()
@@ -97,7 +96,7 @@ function makeResponsive() {
             .on("mouseout", function (data, index) {
                 toolTip.hide(data);
             });
-
+            
         // Create axes labels
         chartGroup.append("text")
             .attr("transform", "rotate(-90)")
@@ -111,6 +110,7 @@ function makeResponsive() {
             .attr("transform", `translate(${width / 2}, ${height + 40})`)
             .attr("class", "aText")
             .text("In Poverty (%)");
+            
     }).catch(function (error) {
         console.log(error);
     });
