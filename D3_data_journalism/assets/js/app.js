@@ -77,8 +77,19 @@ function makeResponsive() {
             .attr("cy", d => yLinearScale(d.healthcare))
             .attr("r", "15")
 
+        //Add the SVG Text Element to the chartGroup
+        const text = chartGroup.selectAll("text")
+            .data(healthData)
+            .enter()
+            .append("text")
+            .classed("stateText", true)
+            .attr("x", d => xLinearScale(d.poverty))
+            .attr("y", d => yLinearScale(d.healthcare) + 5)
+            .text(d => d.abbr)
+            .attr("font-size", "15px");
+
         // Initialize tool tip
-        let toolTip = d3.tip()
+        const toolTip = d3.tip()
             .attr("class", "d3-tip")
             .offset([80, -60])
             .html(function (d) {
@@ -96,7 +107,7 @@ function makeResponsive() {
             .on("mouseout", function (data, index) {
                 toolTip.hide(data);
             });
-            
+
         // Create axes labels
         chartGroup.append("text")
             .attr("transform", "rotate(-90)")
@@ -110,7 +121,7 @@ function makeResponsive() {
             .attr("transform", `translate(${width / 2}, ${height + 40})`)
             .attr("class", "aText")
             .text("In Poverty (%)");
-            
+
     }).catch(function (error) {
         console.log(error);
     });
