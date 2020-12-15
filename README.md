@@ -7,7 +7,7 @@ The editor wants to run a series of feature stories about the health risks facin
 The data set included with the assignment is based on 2014 ACS 1-year estimates from the [US Census Bureau](https://data.census.gov/cedsci/), but you are free to investigate a different data set. The current data set includes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
 
 
-### Core Assignment: D3 Dabbler (Required Assignment)
+### Relationship between Healthcare and Poverty 
 
 A scatter plot between `healthcare` and `poverty` was created.
 
@@ -15,11 +15,9 @@ A scatter plot between `healthcare` and `poverty` was created.
 
 - - -
 
-### Bonus: Impress the Boss (Optional Assignment)
+### Dynamic Plots with Multiple Varibales
 
-Why make a static graphic when D3 lets you interact with your data?
-
-![7-animated-scatter](Images/7-animated-scatter.gif)
+![fihure2](link)
 
 #### 1. More Data, More Dynamics
 
