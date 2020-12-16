@@ -10,7 +10,7 @@ A scatter plot was created with different variables, such as `healthcare` and `p
 ![fihure2](https://github.com/changrita1114/D3-Challenge/blob/main/bonus/assets/img/fyc_gif.gif)
 
 ### Description
-When different x-axis variable was clicked, the data chaneged accordingly. However, when different y-axis variable was clicked, the data DID NOT chanege accordingly.
+When different x-axis or y-axis variable was clicked, the data and x-axis tooltip chaneged accordingly. However, the y-axis tooltip DID NOT change accordingly.
 
 ## Disclaimer
 
