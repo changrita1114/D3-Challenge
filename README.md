@@ -7,7 +7,7 @@ The goal of this project was to investigate multiple relationships between diffe
 ### Dynamic Plot
 A scatter plot was created with different variables, such as `healthcare` and `poverty`.
 
-![fihure2](https://github.com/changrita1114/D3-Challenge/blob/main/bonus/assets/img/fyc_git.gif)
+![fihure2](https://github.com/changrita1114/D3-Challenge/blob/main/bonus/assets/img/fyc_gif.gif)
 
 ### Description
 When different x-axis variable was clicked, the data chaneged accordingly. However, when different y-axis variable was clicked, the data DID NOT chanege accordingly.
