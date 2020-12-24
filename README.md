@@ -2,7 +2,7 @@
 
 ### Purpose
 
-The goal of this project was to investigate multiple relationships between different variables.The data set includes with the project was based on 2014 ACS 1-year estimates from the [US Census Bureau](https://data.census.gov/cedsci/). The current data set includes data on rates of income, obesity, poverty, etc. by state.
+The goal of this project was to investigate multiple relationships between different variables.The dataset includes with the project was based on 2014 ACS 1-year estimates from the [US Census Bureau](https://data.census.gov/cedsci/). The current data set includes data on rates of income, obesity, poverty, etc. by state.
 
 ### Dynamic Plot
 A scatter plot was created with different variables, such as `healthcare` and `poverty`.
@@ -10,7 +10,7 @@ A scatter plot was created with different variables, such as `healthcare` and `p
 ![fihure2](https://github.com/changrita1114/D3-Challenge/blob/main/bonus/assets/img/fyc_gif.gif)
 
 ### Description
-When different x-axis or y-axis variable was clicked, the data and x-axis tooltip chaneged accordingly. However, the y-axis tooltip DID NOT change accordingly.
+When different x-axis or y-axis variable was clicked, the content of the tooltip responded accordingly.
 
 ## Disclaimer
 
